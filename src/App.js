@@ -29,7 +29,7 @@ import React from 'react'
 import { useModal } from './useModal'
 import { createPortal } from 'react-dom'
 const App = () => {
-  const[doc,modalOpen,handleModal]=useModal()
+  const[doc,modalOpen,handleModal]=useModal(`${<p>This is body modal</p>}`)
 
   return (
     <div>

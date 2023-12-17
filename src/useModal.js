@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const useModal = ()=>{
+export const useModal = (props)=>{
     const [modalOpen,setModalOpen]=useState(false)
     const handleModal =()=>{
       setModalOpen(!modalOpen)
@@ -18,8 +18,7 @@ export const useModal = ()=>{
 </div>
 
 <div className='flex justify-center items-center'>
-  
-  
+  ${props}
 </div>
 <hr/>
 <div className='flex justify-center items-center gap-x-2 my-4'>
